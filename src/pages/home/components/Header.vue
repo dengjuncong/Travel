@@ -42,7 +42,7 @@ export default {
       padding-left: .2rem
       background: #fff
       border-radius: .1rem
-      color: #ccc;
+      color: #ccc
     .header-right
       width: 1.24rem
       float: right
