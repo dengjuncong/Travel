@@ -4,7 +4,7 @@
     <ul>
       <li
         class="item border-bottom"
-        v-for="item of recommendList"
+        v-for="item of list"
         :key="item.key"
       >
         <img class="item-img" :src="item.imgUrl" />
@@ -21,30 +21,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1511/34/34170b200db08a5a90.img.jpg_200x200_cc3130fd.jpg',
-        title: '东莞龙凤山庄影视渡假村',
-        desc: '东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1511/34/34170b200db08a5a90.img.jpg_200x200_cc3130fd.jpg',
-        title: '东莞龙凤山庄影视渡假村',
-        desc: '东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1511/34/34170b200db08a5a90.img.jpg_200x200_cc3130fd.jpg',
-        title: '东莞龙凤山庄影视渡假村',
-        desc: '东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村'
-      }, {
-        id: '0004',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1511/34/34170b200db08a5a90.img.jpg_200x200_cc3130fd.jpg',
-        title: '东莞龙凤山庄影视渡假村',
-        desc: '东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>

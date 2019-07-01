@@ -4,7 +4,7 @@
     <ul>
       <li
         class="item border-bottom"
-        v-for="item of recommendList"
+        v-for="item of list"
         :key="item.key"
       >
         <div class="item-img-wrapper">
@@ -22,25 +22,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1811/15/66f14e0fd6fbb.jpg_r_640x214_5d69f21d.jpg',
-        title: '东莞龙凤山庄影视渡假村',
-        desc: '东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1811/15/66f14e0fd6fbb.jpg_r_640x214_5d69f21d.jpg',
-        title: '东莞龙凤山庄影视渡假村',
-        desc: '东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1811/15/66f14e0fd6fbb.jpg_r_640x214_5d69f21d.jpg',
-        title: '东莞龙凤山庄影视渡假村',
-        desc: '东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村东莞龙凤山庄影视渡假村'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
@@ -48,14 +31,13 @@ export default {
 <style lang="stylus" scoped>
   @import '~styles/mixins.styl'
   .title
-    margin-top: .2rem
     line-height: .8rem
     background: #eee
     text-indent: .2rem
   .item-img-wrapper
     overflow: hidden
     height: 0
-    padding-bottom: 33.9%
+    padding-bottom: 38.01%
     .item-img
       width: 100%
   .item-info
