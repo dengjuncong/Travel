@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="banner" @click="handleBannerClick">
-      <img class="banner-img" src="http://img1.qunarzz.com/sight/p0/1603/1d/1d756648039bf30f90.water.jpg_600x330_c2314535.jpg" />
+      <img
+        class="banner-img"
+        src="http://img1.qunarzz.com/sight/p0/1603/1d/1d756648039bf30f90.water.jpg_600x330_c2314535.jpg"
+      />
       <div class="banner-info">
         <div class="banner-title">东莞香市动物园</div>
         <div class="banner-number">
