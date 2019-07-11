@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     getDetailInfo () {
-      axios.get('/api/detail.json', {
+      axios.get('https://dengjuncong.github.io/Travel/api/detail.json', {
         params: {
           id: this.$route.params.id
         }
