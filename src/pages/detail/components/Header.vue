@@ -48,10 +48,10 @@ export default {
     }
   },
   mounted () {
-    window.addEventListener('touchmove', this.handleScroll)
+    window.addEventListener('scroll', this.handleScroll)
   },
   unmounted () {
-    window.removeEventListener('touchmove', this.handleScroll)
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
