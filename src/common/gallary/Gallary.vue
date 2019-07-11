@@ -3,7 +3,7 @@
     <div class="wrapper">
       <swiper :options="swiperOptions">
         <swiper-slide
-          v-for="(item,index) in imgs"
+          v-for="(item, index) in imgs"
           :key="index"
         >
           <img class="gallary-img" :src="item" />
@@ -25,7 +25,7 @@ export default {
       swiperOptions: {
         pagination: '.swiper-pagination',
         paginationType: 'fraction',
-        observerParents: true,
+        observeParents: true,
         observer: true
       }
     }
